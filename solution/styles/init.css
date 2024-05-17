@@ -1,0 +1,30 @@
+
+:root { 
+    --resume-width: 900px;
+    --resume-padding: 10px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+h1 {
+    font-size: 28px;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container:has(.create-screen:not(.none)) {
+    padding: 10px;
+}
+
+.container:has(.resume-screen:not(.none)) {
+    max-width: calc(var(--resume-width) + var(--resume-padding) *  2);
+    padding-inline: var(--resume-padding);
+}

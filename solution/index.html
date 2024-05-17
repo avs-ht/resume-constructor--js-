@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Конструктор резюме</title>
+    <link rel="stylesheet" href="./main.css" />
+    <script type="module" src="./js/main.js" defer></script>
+  </head>
+  
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <form class="create-screen" test-id="resume-builder">
+            <h1 test-id="resume-form-title">Конструктор резюме</h1>
+            <fieldset>
+              <input test-id="resume-title-field" type="text" name="resume-title-field" id="resume-title-field">
+              <legend>Название резюме</legend>
+            </fieldset>
+
+            <fieldset class="personal-data">
+              <legend>Личные данные:</legend>
+              <label for="full_name">ФИО</label>
+              <input test-id="personal-info" type="text" id="full_name" name="full_name" placeholder="Введите фио" required value="">
+              <label for="birth">Дата рождения</label>
+              <input test-id="personal-info" type="date" id="birth" name="birth" placeholder="Введите дату рождения">
+              <label for="city">Город</label>
+              <input test-id="personal-info" type="text" id="city" name="city" placeholder="Введите город">
+              <label for="phone">Номер телефона</label>
+              <input test-id="personal-info" type="tel" id="phone" name="phone" placeholder="Введите номер телефона">
+              <label for="mail">Email</label>
+              <input test-id="personal-info" type="email" id="mail" name="mail" placeholder="Введите почту">
+            </fieldset>
+    
+            <fieldset class="interests">
+              <legend>Интересы:</legend>
+              <ul class="interest-container">
+                <li class="interest-item">
+                  <input test-id="interest" type="text" id="interesting" name="interesting" placeholder="Введите интерес">
+                </li>
+              </ul>
+              <button test-id="add-interest" type="button" id="add-interest">Добавить</button>
+              <button test-id="remove-interest" type="button" id="remove-interest">Удалить</button>
+            </fieldset>
+    
+            <fieldset class="languages">
+              <legend>Языки:</legend>
+              <ul class="language-container">
+                <li class="language-item">
+                  <input test-id="language-name" type="text" id="language-name" name="language-name" placeholder="Введите язык">
+                  <input test-id="language-level" type="text" id="language-level" name="language-level" placeholder="Введите уровень языка">
+                </li>
+              </ul>
+              <button test-id="add-language" type="button" id="add-language">Добавить</button>
+              <button test-id="remove-language" type="button" id="remove-language">Удалить</button>
+            </fieldset>
+    
+            <fieldset class="personal-description">
+              <input test-id="personal-description" name="personal-description" id="personal-description" cols="30" rows="10"></input>
+            </fieldset>
+    
+            <fieldset class="job">
+              <legend>Работа</legend>
+              <ul class="job-container">
+                <li class="job-item">
+                  <label for="job-title">Должность</label>
+                  <input test-id="job-title" type="text" id="job-title" name="job-title" placeholder="Введите должность">
+                  <label for="job-date-start">Дата начала работы</label>
+                  <input test-id="job-date-start" type="date" id="job-date-start" name="job-start-date">
+                  <label for="job-date-end">Дата конца работы</label>
+                  <input test-id="job-date-end" type="date" id="job-date-end" name="job-start-end">
+                  <label for="job-place">Место работы</label>
+                  <input test-id="job-place" type="text" id="job-place" name="job-place" placeholder="Введите место работы">
+                  <label for="job-description">Описание работы</label>
+                  <input test-id="job-description" name="job-description" id="job-description" cols="30" rows="10"></input>
+                </li>
+              </ul>
+               
+              <button test-id="add-job" type="button" id="add-job">Добавить</button>
+              <button test-id="remove-job" type="button" id="remove-job">Удалить</button>
+            </fieldset>
+    
+            <fieldset class="education">
+              <legend>Образование</legend>
+              <ul class="education-container">
+                <li class="education-item">
+                  <label for="education-title">Высшее образование</label>
+                  <input test-id="education-title" type="text" id="education-title" name="education-title" placeholder="Введите высшее образование">
+                  <label for="education-date-start">Дата начала обучения</label>
+                  <input test-id="education-date-start" type="date" id="education-date-start" name="education-date-start">
+                  <label for="education-date-end">Дата конца обучения</label>
+                  <input test-id="education-date-end" type="date" id="education-date-end" name="education-date-end">
+                  <label for="education-place">Место обучения</label>
+                  <input test-id="education-place" type="text" id="education-place" name="education-place" placeholder="Введите место обучения">
+                  <label for="education-description">Описание образования</label>
+                  <input test-id="education-description" name="education-description" id="education-description" cols="30" rows="10"></input>
+                </li>
+              </ul>
+              
+              <button test-id="add-education" type="button" id="add-education">Добавить</button>
+              <button test-id="remove-education" type="button" id="remove-education">Удалить</button>
+            </fieldset>
+    
+            <fieldset class="course">
+              <legend>Курсы</legend>
+              <ul class="course-container">
+                <li class="course-item">
+                  <label for="course-title">Название курса</label>
+                  <input test-id="course-title" type="text" id="course-title" name="course-title" placeholder="Введите название курса">
+                  <label for="course-date-start">Дата начала обучения</label>
+                  <input test-id="course-date-start" type="date" id="course-date-start" name="course-date-start">
+                  <label for="course-date-end">Дата конца обучения</label>
+                  <input test-id="course-date-end" type="date" id="course-date-end" name="course-date-end">
+                  <label for="course-place">Организация</label>
+                  <input test-id="course-place" type="text" id="course-place" name="course-place" placeholder="Введите организацию">
+                </li>
+              </ul>
+              
+              <button test-id="add-course" type="button" id="add-course">Добавить</button>
+              <button test-id="remove-course" type="button" id="remove-course">Удалить</button>
+            </fieldset>
+
+            <button test-id="generate-resume" id="generate-resume" type="button" disabled>Составить резюме</button>
+        </form>
+        <div class="resume-screen none">  
+          <button test-id="back-button" id="return-to-form" type="button" hidden>Вернуться</button>
+          <button test-id="save-button" id="save-resume" type="button">Сохранить</button>
+        </div>
+
+      </div> 
+    </div>
+  </body>
+  
+</html>

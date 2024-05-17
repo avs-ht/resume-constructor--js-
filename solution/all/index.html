@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="./index.js"></script>
+    <link rel="preload" href="./images/photo.jpg" as="image">
+    <title>Список резюме</title>
+</head>
+<body>
+    <div class="container">
+        <div class="resume-container">
+            <h1>Мои резюме</h1>
+            <ul class="resumes-list">
+    
+            </ul>
+            <button test-id="add-resume" id="add-resume" title="Добавить">+</button>
+            <button test-id="delete-resumes" class="none" hidden id="delete-resumes">Удалить выбранные резюме</button>
+        </div>
+        <dialog class="copy-modal">
+            <div class="copy-modal__checkboxes">
+                <div class="personal-data">
+                    <label for="checkbox-personal-data">Личные данные</label>
+                    <input test-id="copy-modal__checkbox" type="checkbox" id="checkbox-personal-data">
+                </div>
+                <div class="description">
+                    <label for="checkbox-description">Описание</label>
+                    <input test-id="copy-modal__checkbox" type="checkbox" id="checkbox-description">
+                </div>
+                <div class="interest">
+                    <label for="checkbox-interest">Интересы</label>
+                    <input test-id="copy-modal__checkbox" type="checkbox" id="checkbox-interest">
+                </div>
+                <div class="language">
+                    <label for="checkbox-language">Языки</label>
+                    <input test-id="copy-modal__checkbox" type="checkbox" id="checkbox-language">
+                </div>
+                <div class="job">
+                    <label for="checkbox-job">Опыт работы</label>
+                    <input test-id="copy-modal__checkbox" type="checkbox" id="checkbox-job">
+                </div>
+                <div class="education">
+                    <label for="checkbox-education">Образование</label>
+                    <input test-id="copy-modal__checkbox" type="checkbox" id="checkbox-education">
+                </div>
+                <div class="course">
+                    <label for="checkbox-course">Курсы</label>
+                    <input test-id="copy-modal__checkbox" type="checkbox" id="checkbox-course">
+                </div>
+            </div>
+            <div class="copy-modal__buttons">
+                <button test-id="copy-modal__copy" id="copy-modal__copy" hidden>Копировать</button>
+                <button test-id="copy-modal__cancel" id="copy-modal__cancel" hidden>Отмена</button>
+            </div>
+        </dialog>
+    </div>
+</body>
+</html>

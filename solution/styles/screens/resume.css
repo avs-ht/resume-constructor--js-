@@ -1,0 +1,214 @@
+.resume {
+    display: flex;
+    > * {
+        padding-inline: 16px;
+        flex-grow: 1;
+    }
+    font-size: 12.5px;
+    line-height: 1.158;
+
+    h1,h2,h3 {
+        font-weight: bold;
+    }
+    padding-bottom: 2px;
+}
+
+.resume-screen__left-side {
+    background-color: #6495ED;
+    padding-top: 16px;
+    padding-bottom: 21.88px;
+    min-height: 256px;
+    color: white;
+
+    img {
+        max-width: 224px;
+        padding-inline: 12px;
+        border-radius: 50%;
+        margin-bottom: 16px;
+    }
+    h2 {
+        line-height: 1.192;
+        padding-block: 14.9px 15.1px;
+        font-size: 15.9px;
+        margin-bottom: 20px;
+        position: relative;
+        &:after {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    h3 {
+        line-height: 1.163;
+        font-size: 13.3px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        h2:has(+ &.personal-info) {
+            padding-top: 15.5px;
+            margin-bottom: 23.2px;
+        }
+        &.personal-info {
+            padding-bottom: 11.08px;
+            gap: 14.28px;
+            li {
+                display: flex;
+                flex-direction: column;
+                gap: 0.92px;
+            }
+        }
+
+        &.resume-interests {
+            gap: 10.68px;
+            padding-bottom: 15.3px;
+        }
+        &.resume-languages {
+            li {
+                display: flex;
+                justify-content: space-between;
+            }
+            gap: 12px;
+            padding-bottom: 12.3px;
+        }
+    }
+}
+
+
+
+
+.resume-screen__right-side {
+    width: 644px;
+    background-color: #F8F8F8;
+
+    h1 {
+        font-size: 27.9px;
+        line-height: 1.336;
+        padding-block: 27.3px 27.3px;
+        &:has(+ p.resume-screen__desc) {
+            margin-bottom: 13.19px;
+        }
+        & + p.resume-screen__desc {
+            max-width: 556px;
+            padding-bottom: 11.03px;
+        }
+    }
+
+    h1:has(+ p),
+    h2 {
+        position: relative;
+        &:after {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: #D3D3D3;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    h2 {
+        font-size: 15.9px;
+        line-height: 1.192;
+        padding-top: 14.9px;
+        padding-bottom: 15.1px;
+        margin-bottom: 19.34px;
+        &:has(+ ul.resume-course) {
+            margin-bottom: 20px;
+        }
+    }   
+
+    h3 {
+        font-size: 13.3px;
+        line-height: 1.163;
+    }
+
+    .card__main {
+        display: flex;
+        flex-direction: column;
+        .card__upper-part {
+            display: flex;
+            justify-content: space-between;
+        }
+        .card__down-part p {
+            font-style: italic;
+            font-size: 13.5px;
+            line-height: 1.163;
+        }
+    }
+    .card__additional {
+        max-width: 556px;
+    }
+
+    li {
+        &.resume-experience__item{
+            .card__main:has(+ p.card__additional) {
+                margin-bottom: 17.64px;
+            }
+        }
+        &.resume-education__item {
+            .card__main:has(+ p.card__additional) {
+                margin-bottom: 16.43px;
+            }
+        }
+        &.resume-course__item {
+            .card__upper-part:has(+ div.card__down-part) {
+                margin-bottom: 1.34px;
+            }
+        }
+    }
+
+    .card-container {
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
+        h2:has(+ ul.resume-experience) {
+           padding-bottom: 16.1px;
+        }
+        &:has(ul.resume-experience) {
+            padding-bottom: 24.02px;
+            ul {
+                gap: 23.95px;
+            }
+            
+        }
+
+        h2:has(+ ul.resume-education) {
+           margin-bottom: 19.8px;
+        }
+        &:has(ul.resume-education) {
+            padding-bottom: 24.6px;
+            ul {
+                gap: 25.95px;
+            }
+        }
+        &:has(ul.resume-course) {
+            padding-bottom: 15.32px;
+            ul {
+                gap: 11.66px;
+            }
+        }
+    }
+
+}
+#save-resume,
+#return-to-form {
+    position: absolute;
+    top: 0;
+}
+
+#return-to-form {
+    left: 0;
+}
+
+#save-resume {
+    right: 0
+}

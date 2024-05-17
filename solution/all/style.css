@@ -1,0 +1,43 @@
+@import '../styles/none.css';
+@import '../styles/null.css';
+@import '../styles/screens/resume.css';
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+h1 {
+    font-size: 28px;
+}
+
+.container {
+  margin: auto;
+  max-width: 900px
+}
+
+.actions {
+  display: none
+}
+
+.actions.opened {
+  display: block
+}
+
+.back-button {
+  position: absolute;
+  top: 0;
+  left: 0
+}
+
+#add-resume {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#delete-resumes {
+  position: absolute;
+  top:50%;
+  left: 0;
+
+}

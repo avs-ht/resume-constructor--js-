@@ -1,0 +1,33 @@
+.create-screen {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+fieldset {
+    display: flex;
+    width: max-content;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px;
+}
+
+.language-item,
+.job-item,
+.education-item,
+.course-item {
+    display: flex;
+    flex-direction: column;
+    > input {
+        margin-bottom: 10px;
+    }
+    > textarea {
+        margin-bottom: 20px;
+    }
+}
+
+#generate-resume {
+    font-size: 1.4rem;
+    border: 2px solid black;
+    padding: 20px
+}
